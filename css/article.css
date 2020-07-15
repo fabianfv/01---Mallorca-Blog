@@ -1,23 +1,46 @@
 body {
-  background-color: #FEF4E2;
+  background-color: #fef4e2;
 }
 
-header h1 {
+header {
   text-align: center;
 }
 
 header h1 a {
-  font-family: satisfy, sans;
-  font-size: calc(1.2rem + 6vw);
+  text-decoration: none;
+}
+
+header h1 a {
+  display: inline-block;
+  position: relative;
+
+  font-family: Rochester, cursive;
+  font-size: calc(0.8rem + 3vw);
   color: #ca9538;
   padding: calc(0.5rem + 1.3vw) 0;
-  text-decoration: none;
+}
+
+header h1 a::after,
+header h1 a::before {
+  content: "";
+  position: absolute;
+  width: 5vw;
+  height: 2px;
+  background-color: currentColor;
+  top: 50%;
+}
+
+header h1 a::after {
+  left: -7vw;
+}
+
+header h1 a::before {
+  right: -7vw;
 }
 
 main {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 main article {
@@ -25,10 +48,7 @@ main article {
   flex-direction: column;
   margin-left: 2%;
   margin-bottom: 3%;
-  max-width: 40%;
-  border-bottom: 1px solid gray;
-  padding-bottom: 2%;
-  cursor: pointer;
+  max-width: 60%;
 }
 
 main article h1 {
@@ -42,13 +62,13 @@ main article p {
   font-size: calc(0.5rem + 1.7vw);
 }
 
-main article img {
-  flex-basis: 100%;
+main article figure img {
+  width: 100%;
 }
 
 footer {
   background-color: #a56900;
-  margin-top: 2%;
+  margin-top: 4%;
   padding: calc(0.4rem + 1vw);
 }
 
