@@ -4,13 +4,13 @@ body {
 
 header h1 {
   text-align: center;
+  margin: calc(0.5rem + 1.3vw) 0;
 }
 
 header h1 a {
   font-family: satisfy, sans;
   font-size: calc(1.2rem + 6vw);
   color: #ca9538;
-  padding: calc(0.5rem + 1.3vw) 0;
   text-decoration: none;
 }
 
@@ -18,14 +18,16 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
 main article {
   display: flex;
   flex-direction: column;
-  margin-left: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
   margin-bottom: 3%;
-  max-width: 40%;
+  flex-basis: 40%;
   border-bottom: 1px solid gray;
   padding-bottom: 2%;
   cursor: pointer;

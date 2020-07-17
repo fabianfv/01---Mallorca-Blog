@@ -46,9 +46,8 @@ main {
 main article {
   display: flex;
   flex-direction: column;
-  margin-left: 2%;
   margin-bottom: 3%;
-  max-width: 60%;
+  flex-basis: 60%;
 }
 
 main article h1 {
@@ -60,10 +59,6 @@ main article h1 {
 main article p {
   font-family: "Raleway", sans-serif;
   font-size: calc(0.5rem + 1.7vw);
-}
-
-main article figure img {
-  width: 100%;
 }
 
 footer {
