@@ -1,9 +1,12 @@
 body {
-  background-color: #fef4e2;
+  background-color: #8d7a57;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 header {
   text-align: center;
+  background-color: #f4ecd8;
 }
 
 header h1 a {
@@ -15,7 +18,7 @@ header h1 a {
   position: relative;
 
   font-family: Rochester, cursive;
-  font-size: calc(0.8rem + 3vw);
+  font-size: calc(1rem + 2.5vw);
   color: #ca9538;
   padding: calc(0.5rem + 1.3vw) 0;
 }
@@ -39,6 +42,7 @@ header h1 a::before {
 }
 
 main {
+  background-color: #f4ecd8;
   display: flex;
   justify-content: center;
 }
@@ -52,24 +56,24 @@ main article {
 
 main article h1 {
   font-family: "Raleway", sans-serif;
-  font-size: calc(0.5rem + 3vw);
+  font-size: calc(1rem + 1.5vw);
   margin-top: calc(0.5rem + 1.3vw);
 }
 
 main article p {
   font-family: "Raleway", sans-serif;
-  font-size: calc(0.5rem + 1.7vw);
+  font-size: calc(1rem + 0.8vw);
+  margin-bottom: 3%;
 }
 
 footer {
   background-color: #a56900;
-  margin-top: 4%;
   padding: calc(0.4rem + 1vw);
 }
 
 footer h1 {
   font-family: "Quicksand", sans-serif;
-  font-size: calc(0.7rem + 1.9vw);
+  font-size: calc(1rem + 1vw);
   text-align: center;
   color: #ffffff;
 }
